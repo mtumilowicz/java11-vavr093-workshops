@@ -1,3 +1,4 @@
 rootProject.name = 'java11-vavr093-workshops'
 include 'option-workshop'
+include 'try-workshop'
 
