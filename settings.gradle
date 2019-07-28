@@ -2,4 +2,5 @@ rootProject.name = 'java11-vavr093-workshops'
 include 'option-workshop'
 include 'try-workshop'
 include 'either-workshop'
+include 'partial-function-lifting-workshop'
 
