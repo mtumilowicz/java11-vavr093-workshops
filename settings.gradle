@@ -4,3 +4,5 @@ include 'try-workshop'
 include 'either-workshop'
 include 'partial-function-lifting-workshop'
 include 'pattern-matching-workshop'
+include 'validation-workshop'
+

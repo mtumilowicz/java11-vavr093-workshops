@@ -1,0 +1,16 @@
+POST http://localhost:8080/answer/person/new
+Content-Type: application/json
+
+{
+  "address": {
+    "city": "string",
+    "postalCode": "string"
+  },
+  "age": 0,
+  "emails": [
+    "string"
+  ],
+  "name": "string"
+}
+
+###

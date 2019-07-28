@@ -1,0 +1,16 @@
+POST http://localhost:8080/answer/person/new
+Content-Type: application/json
+
+{
+  "address": {
+    "city": "Warsaw",
+    "postalCode": "00-001"
+  },
+  "age": 15,
+  "emails": [
+    "mtumilowicz@gmail.com"
+  ],
+  "name": "Michal"
+}
+
+###
