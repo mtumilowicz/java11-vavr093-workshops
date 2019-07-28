@@ -3,4 +3,4 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
-rootProject.name = 'java11-vavr093-validation-workshop'
+rootProject.name = 'validation-workshop'

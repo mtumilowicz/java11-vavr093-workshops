@@ -8,7 +8,7 @@ lombok {
     version = '1.18.4'
 }
 
-group 'java11-vavr093-partial-function-lifting-workshop'
+group 'partial-function-lifting-workshop'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 11

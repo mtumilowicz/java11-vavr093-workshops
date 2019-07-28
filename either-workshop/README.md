@@ -1,7 +1,4 @@
-[![Build Status](https://travis-ci.com/mtumilowicz/java11-vavr093-either-workshop.svg?branch=master)](https://travis-ci.com/mtumilowicz/java11-vavr093-either-workshop)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-
-# java11-vavr093-either-workshop
+# either-workshop
 
 # project description
 * https://www.vavr.io/vavr-docs/#_either
