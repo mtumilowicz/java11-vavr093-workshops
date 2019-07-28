@@ -5,7 +5,8 @@ plugins {
 group 'java11-vavr093-workshops'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 1.8
+sourceCompatibility = 11
+targetCompatibility = 11
 
 repositories {
     mavenCentral()
