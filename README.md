@@ -6,3 +6,5 @@ Suggested order:
 * either-workshop
 * pattern-matching-workshop
 * validation-workshop
+
+**Every module has its own readme file with instructions.**
