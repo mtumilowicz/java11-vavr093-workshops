@@ -8,9 +8,6 @@ import io.vavr.collection.List
 import io.vavr.control.Validation
 import spock.lang.Specification
 
-/**
- * Created by mtumilowicz on 2019-05-12.
- */
 class NewAddressRequestValidatorAnswerTest extends Specification {
     def "test validate - all fields invalid"() {
         given:

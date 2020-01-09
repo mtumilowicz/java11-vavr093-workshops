@@ -10,9 +10,6 @@ import lombok.Value;
 import java.util.function.Predicate;
 import java.util.regex.Pattern;
 
-/**
- * Created by mtumilowicz on 2018-12-09.
- */
 @Value
 public class PostalCode {
     private static final Predicate<String> PREDICATE = Pattern.compile("\\d{2}-\\d{3}").asMatchPredicate();

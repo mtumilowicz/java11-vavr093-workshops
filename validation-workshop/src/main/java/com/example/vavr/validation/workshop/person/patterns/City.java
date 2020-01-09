@@ -10,9 +10,6 @@ import lombok.Value;
 import java.util.function.Predicate;
 import java.util.regex.Pattern;
 
-/**
- * Created by mtumilowicz on 2019-05-11.
- */
 @Value
 public class City {
     private static final Predicate<String> PREDICATE = Pattern.compile("[\\w]+").asMatchPredicate();

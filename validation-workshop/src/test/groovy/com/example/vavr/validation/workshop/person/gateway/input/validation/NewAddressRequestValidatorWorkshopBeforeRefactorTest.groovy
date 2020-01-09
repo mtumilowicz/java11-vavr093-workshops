@@ -7,9 +7,7 @@ import com.example.vavr.validation.workshop.person.patterns.City
 import com.example.vavr.validation.workshop.person.patterns.PostalCode
 import io.vavr.collection.List
 import spock.lang.Specification 
-/**
- * Created by mtumilowicz on 2019-05-13.
- */
+
 class NewAddressRequestValidatorWorkshopBeforeRefactorTest extends Specification {
     def "test validate - all fields invalid"() {
         given:

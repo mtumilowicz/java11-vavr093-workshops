@@ -8,9 +8,6 @@ import lombok.Value;
 
 import java.util.function.IntPredicate;
 
-/**
- * Created by mtumilowicz on 2018-12-09.
- */
 @Value
 public class Age {
     private static final IntPredicate PREDICATE = i -> i > 0;

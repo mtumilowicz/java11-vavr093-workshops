@@ -1,6 +1,5 @@
 package com.example.vavr.validation.workshop.person.patterns;
 
-
 import com.example.vavr.validation.workshop.intrastructure.ValidationException;
 import com.google.common.base.Preconditions;
 import io.vavr.collection.List;
@@ -11,9 +10,6 @@ import lombok.Value;
 import java.util.function.Predicate;
 import java.util.regex.Pattern;
 
-/**
- * Created by mtumilowicz on 2018-12-09.
- */
 @Value
 public class Name {
     private static final Predicate<String> PREDICATE = Pattern.compile("[\\w]+").asMatchPredicate();

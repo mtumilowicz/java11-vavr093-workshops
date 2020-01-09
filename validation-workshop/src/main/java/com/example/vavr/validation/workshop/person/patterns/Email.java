@@ -1,6 +1,5 @@
 package com.example.vavr.validation.workshop.person.patterns;
 
-
 import com.example.vavr.validation.workshop.intrastructure.ValidationException;
 import com.google.common.base.Preconditions;
 import io.vavr.collection.List;
@@ -13,9 +12,6 @@ import java.util.function.Predicate;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-/**
- * Created by mtumilowicz on 2018-12-09.
- */
 @Value
 public class Email {
     private static final Predicate<String> PREDICATE = Pattern.compile("[\\w._%+-]+@[\\w.-]+\\.[\\w]{2,}")

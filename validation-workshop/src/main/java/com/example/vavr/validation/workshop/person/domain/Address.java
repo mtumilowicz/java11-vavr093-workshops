@@ -6,9 +6,6 @@ import lombok.Builder;
 import lombok.NonNull;
 import lombok.Value;
 
-/**
- * Created by mtumilowicz on 2019-05-10.
- */
 @Value
 @Builder
 class Address {

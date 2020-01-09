@@ -6,9 +6,6 @@ import lombok.NonNull;
 import lombok.Value;
 import lombok.experimental.Wither;
 
-/**
- * Created by mtumilowicz on 2019-05-09.
- */
 @Value
 @Builder
 @Wither

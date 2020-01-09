@@ -7,11 +7,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-/**
- * Created by mtumilowicz on 2019-05-12.
- * <p>
- * class should be removed during PersonControllerWorkshop refactoring
- */
+// class should be removed during PersonControllerWorkshop refactoring
 @ControllerAdvice
 class ErrorMessagesControllerAdvice {
 

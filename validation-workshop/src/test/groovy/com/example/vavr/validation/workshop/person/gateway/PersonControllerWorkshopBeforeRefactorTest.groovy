@@ -10,9 +10,7 @@ import com.example.vavr.validation.workshop.person.gateway.output.NewPersonRespo
 import com.example.vavr.validation.workshop.person.patterns.PersonId
 import io.vavr.collection.List
 import spock.lang.Specification 
-/**
- * Created by mtumilowicz on 2019-05-12.
- */
+
 class PersonControllerWorkshopBeforeRefactorTest extends Specification {
 
     def "test newPerson - valid request"() {

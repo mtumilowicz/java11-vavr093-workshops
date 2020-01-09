@@ -4,9 +4,6 @@ import com.example.vavr.validation.workshop.person.gateway.input.NewPersonReques
 import io.vavr.control.Option
 import spock.lang.Specification
 
-/**
- * Created by mtumilowicz on 2019-05-12.
- */
 class PersonRequestPatchServiceTest extends Specification {
     def "test patchSaveRequest - always Option.none"() {
         expect:

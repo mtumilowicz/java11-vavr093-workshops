@@ -10,9 +10,6 @@ import io.vavr.control.Validation;
 
 import java.util.function.Function;
 
-/**
- * Created by mtumilowicz on 2018-12-09.
- */
 public class NewPersonRequestValidatorAnswer {
     private static Function<Seq<String>, String> concatByComma = strings -> strings.mkString(", ");
     

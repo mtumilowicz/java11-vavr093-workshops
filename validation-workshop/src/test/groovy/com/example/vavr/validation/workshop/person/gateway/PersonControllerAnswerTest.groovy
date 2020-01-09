@@ -12,9 +12,6 @@ import io.vavr.collection.List
 import io.vavr.control.Either
 import spock.lang.Specification
 
-/**
- * Created by mtumilowicz on 2019-05-12.
- */
 class PersonControllerAnswerTest extends Specification {
 
     def "test newPerson - valid request"() {

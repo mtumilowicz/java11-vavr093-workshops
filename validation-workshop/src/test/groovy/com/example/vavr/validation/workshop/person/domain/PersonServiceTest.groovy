@@ -10,9 +10,6 @@ import com.example.vavr.validation.workshop.person.patterns.PostalCode
 import io.vavr.collection.List
 import spock.lang.Specification
 
-/**
- * Created by mtumilowicz on 2019-05-12.
- */
 class PersonServiceTest extends Specification {
     def "test save"() {
         given:

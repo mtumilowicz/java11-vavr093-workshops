@@ -7,9 +7,6 @@ import com.example.vavr.validation.workshop.person.patterns.PostalCode;
 import io.vavr.collection.Seq;
 import io.vavr.control.Validation;
 
-/**
- * Created by mtumilowicz on 2018-12-09.
- */
 class NewAddressRequestValidatorAnswer {
     static Validation<Seq<String>, NewAddressCommand> validate(NewAddressRequest request) {
 

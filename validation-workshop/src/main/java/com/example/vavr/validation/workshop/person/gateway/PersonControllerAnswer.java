@@ -20,9 +20,6 @@ import org.springframework.web.bind.annotation.RestController;
 import static io.vavr.API.*;
 import static io.vavr.Patterns.*;
 
-/**
- * Created by mtumilowicz on 2019-05-08.
- */
 @RestController
 @FieldDefaults(makeFinal = true, level = AccessLevel.PRIVATE)
 @RequiredArgsConstructor

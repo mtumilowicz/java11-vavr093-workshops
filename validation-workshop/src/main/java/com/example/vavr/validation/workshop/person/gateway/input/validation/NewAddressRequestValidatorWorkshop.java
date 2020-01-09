@@ -9,9 +9,6 @@ import io.vavr.collection.List;
 
 import java.util.LinkedList;
 
-/**
- * Created by mtumilowicz on 2018-12-09.
- */
 class NewAddressRequestValidatorWorkshop {
     
     /**

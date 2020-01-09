@@ -14,9 +14,6 @@ import io.vavr.collection.Seq;
 import java.util.LinkedList;
 import java.util.function.Function;
 
-/**
- * Created by mtumilowicz on 2018-12-09.
- */
 public class NewPersonRequestValidatorWorkshop {
     
     private static Function<Seq<String>, String> concatByComma = strings -> strings.mkString(", ");

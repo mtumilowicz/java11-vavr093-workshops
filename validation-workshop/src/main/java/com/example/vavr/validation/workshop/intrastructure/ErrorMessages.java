@@ -8,9 +8,6 @@ import lombok.Value;
 import static io.vavr.API.*;
 import static io.vavr.Predicates.isNull;
 
-/**
- * Created by mtumilowicz on 2019-05-09.
- */
 @Value
 public class ErrorMessages {
     Seq<String> messages;

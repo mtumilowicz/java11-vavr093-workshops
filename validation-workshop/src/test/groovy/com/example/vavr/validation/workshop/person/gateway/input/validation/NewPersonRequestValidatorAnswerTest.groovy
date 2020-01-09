@@ -15,9 +15,6 @@ import io.vavr.collection.List
 import io.vavr.control.Validation
 import spock.lang.Specification
 
-/**
- * Created by mtumilowicz on 2019-05-12.
- */
 class NewPersonRequestValidatorAnswerTest extends Specification {
     def "test validate - all fields valid"() {
         given:
