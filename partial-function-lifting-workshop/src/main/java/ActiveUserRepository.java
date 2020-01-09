@@ -15,7 +15,7 @@ class ActiveUserRepository {
     boolean containsAll(Collection<Integer> ids) {
         return storage.keySet().containsAll(ids);
     }
-    
+
     int count() {
         return storage.size();
     }

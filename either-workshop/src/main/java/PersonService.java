@@ -23,10 +23,10 @@ public class PersonService {
      */
     static Either<String, Person> process(Person person) {
         return null; // loadStats.apply(person)
-            // filter, PersonStats.matches
-            // getOrElse, "stats <= 15"
-            // map, PersonStats::getPerson
-            // map, Person.activate
-            // flatMap, PersonRepository.save
+        // filter, PersonStats.matches
+        // getOrElse, "stats <= 15"
+        // map, PersonStats::getPerson
+        // map, Person.activate
+        // flatMap, PersonRepository.save
     }
 }

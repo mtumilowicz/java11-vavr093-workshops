@@ -11,8 +11,8 @@ class LifterAnswer {
 
     static <T, R> Function<T, Option<R>> lift(Function<T, R> function) {
         return x -> Try.of(() -> function.apply(x)).toOption();
-    }    
-    
+    }
+
     static <T, R> Function<T, Try<R>> liftTry(Function<T, R> function) {
         return x -> Try.of(() -> function.apply(x));
     }

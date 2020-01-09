@@ -201,7 +201,7 @@ class Answers extends Specification {
         Option<Integer> definedNull = Option.some()
         Option<Integer> empty = Option.none()
         and:
-        Function<Integer, Integer> squareOrZero = { nonNull(it) ? it ** 2 : 0 }
+        Function<Integer, Integer> squareOrZero = { nonNull(it) ? it**2 : 0 }
 
         when:
         Option<String> definedMapped = defined.map { squareOrZero.apply(it) }

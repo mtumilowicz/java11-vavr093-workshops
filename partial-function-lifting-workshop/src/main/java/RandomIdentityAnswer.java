@@ -9,7 +9,7 @@ import java.util.Random;
 @FieldDefaults(makeFinal = true, level = AccessLevel.PRIVATE)
 @RequiredArgsConstructor
 class RandomIdentityAnswer implements PartialFunction<Integer, Integer> {
-    
+
     Random random = new Random();
     Range<Integer> range;
 

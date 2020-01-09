@@ -11,7 +11,7 @@ import lombok.Value;
 class Address {
     @NonNull
     PostalCode postalCode;
-    
+
     @NonNull
     City city;
 }

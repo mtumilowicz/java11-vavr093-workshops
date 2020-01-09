@@ -12,7 +12,7 @@ class Person {
     int id;
     int age;
     boolean active;
-    
+
     Person activate() {
         return this.withActive(true);
     }
@@ -22,7 +22,7 @@ class Person {
 class PersonStats {
     Person person;
     int stats;
-    
+
     static Predicate<PersonStats> matches(IntPredicate predicate) {
         return ps -> predicate.test(ps.stats);
     }

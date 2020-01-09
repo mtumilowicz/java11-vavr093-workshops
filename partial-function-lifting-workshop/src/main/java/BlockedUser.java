@@ -11,7 +11,7 @@ class BlockedUser {
     int id;
     int warn;
     LocalDate banDate;
-    
+
     ActiveUser activate(Clock clock) {
         if (warn > 10) {
             throw new BusinessException("id = " + id + ": warns has to be <= 10");

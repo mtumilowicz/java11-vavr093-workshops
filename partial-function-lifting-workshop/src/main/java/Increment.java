@@ -9,7 +9,7 @@ import lombok.experimental.FieldDefaults;
 class Increment implements PartialFunction<Integer, Integer> {
 
     Range<Integer> range;
-    
+
     @Override
     public Integer apply(Integer integer) {
         //if defined: x -> x + 1, otherwise -1

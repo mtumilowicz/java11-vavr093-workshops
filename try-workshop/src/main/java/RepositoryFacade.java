@@ -19,7 +19,7 @@ class CacheRepository {
         }
         if (id == 3) {
             return Try.failure(new CacheUserCannotBeFound(id));
-        }        
+        }
         if (id == 4) {
             return Try.failure(new CacheUserCannotBeFound(id));
         }
@@ -46,7 +46,7 @@ class DatabaseRepository {
 
 class BackupRepository {
     static Try<String> findById(int id) {
-                return Try.of(() -> "from backup");
+        return Try.of(() -> "from backup");
     }
 
 }
@@ -66,5 +66,5 @@ class DatabaseConnectionProblem extends RuntimeException {
 }
 
 class CacheSynchronization extends RuntimeException {
-    
+
 }

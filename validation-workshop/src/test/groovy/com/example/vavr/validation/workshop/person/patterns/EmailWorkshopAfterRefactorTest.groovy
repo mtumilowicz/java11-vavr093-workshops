@@ -2,7 +2,7 @@ package com.example.vavr.validation.workshop.person.patterns
 
 import io.vavr.collection.List
 import io.vavr.control.Validation
-import spock.lang.Specification 
+import spock.lang.Specification
 
 class EmailWorkshopAfterRefactorTest extends Specification {
 

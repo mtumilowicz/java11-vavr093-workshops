@@ -278,20 +278,20 @@ public class Workshop {
     /**
      * we often meet logic steered by set (or iterable) membership
      * it is usually pile of if-then-return statements
-     *  if set1.contains(x) return y1
-     *  if set2.contains(x) return y2
-     *  if set3.contains(x) return y3
-     *  otherwise throw exception
+     * if set1.contains(x) return y1
+     * if set2.contains(x) return y2
+     * if set3.contains(x) return y3
+     * otherwise throw exception
      * which is quite noisy and vague
-     * 
+     * <p>
      * the goal of this example is to show how to rewrite it using pattern matching
-     * 
+     * <p>
      * this method simply returns type (for example for front-end) based on chosen payment
-     *  CREDIT_CARD, GIFT_CARD -> "card"
-     *  CASH -> "cash"
-     *  PAYPAL -> "online"
-     *  BLIK, APPLE_PAY -> "mobile"
-     *  null -> "not paid yet"
+     * CREDIT_CARD, GIFT_CARD -> "card"
+     * CASH -> "cash"
+     * PAYPAL -> "online"
+     * BLIK, APPLE_PAY -> "mobile"
+     * null -> "not paid yet"
      */
     public static String isInTest(@NonNull Invoice invoice) {
         var paymentType = invoice.getPaymentType();
@@ -312,7 +312,7 @@ public class Workshop {
         if (Objects.isNull(paymentType)) {
             return "not paid yet";
         }
-        
+
         throw new IllegalArgumentException("value not supported: " + paymentType);
     }
 

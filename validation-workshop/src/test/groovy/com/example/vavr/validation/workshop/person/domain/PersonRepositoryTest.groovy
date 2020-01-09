@@ -16,7 +16,7 @@ class PersonRepositoryTest extends Specification {
                         .postalCode(PostalCode.of('00-001'))
                         .build())
                 .build()
-        
+
         expect:
         new PersonRepository().save(person) == person.withId(PersonId.of(1))
     }

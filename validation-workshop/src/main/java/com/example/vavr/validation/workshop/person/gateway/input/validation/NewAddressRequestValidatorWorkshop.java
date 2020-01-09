@@ -10,14 +10,14 @@ import io.vavr.collection.List;
 import java.util.LinkedList;
 
 class NewAddressRequestValidatorWorkshop {
-    
+
     /**
      * should return Validation<Seq<String>, NewAddressCommand>
-     * 
-     * hints: 
-     *  return Validation
-     *      .combine(City.validateWorkshop(request.getCity()), ...)
-     *      .ap((city, ...) -> NewAddressCommand.builder()...)
+     * <p>
+     * hints:
+     * return Validation
+     * .combine(City.validateWorkshop(request.getCity()), ...)
+     * .ap((city, ...) -> NewAddressCommand.builder()...)
      */
     static NewAddressCommand validate(NewAddressRequest request) {
 

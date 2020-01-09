@@ -7,7 +7,7 @@ import com.example.vavr.validation.workshop.person.gateway.input.NewAddressReque
 import com.example.vavr.validation.workshop.person.gateway.input.NewPersonRequest
 import com.example.vavr.validation.workshop.person.patterns.*
 import io.vavr.collection.List
-import spock.lang.Specification 
+import spock.lang.Specification
 
 class NewPersonRequestValidatorWorkshopBeforeRefactorTest extends Specification {
     def "test validate - all fields valid"() {

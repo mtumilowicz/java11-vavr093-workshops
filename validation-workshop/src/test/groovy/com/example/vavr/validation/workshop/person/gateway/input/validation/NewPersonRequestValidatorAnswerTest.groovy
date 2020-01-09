@@ -5,12 +5,7 @@ import com.example.vavr.validation.workshop.person.domain.NewPersonCommand
 import com.example.vavr.validation.workshop.person.gateway.input.NewAddressRequest
 import com.example.vavr.validation.workshop.person.gateway.input.NewPersonRequest
 import com.example.vavr.validation.workshop.person.gateway.input.validation.NewPersonRequestValidatorAnswer
-import com.example.vavr.validation.workshop.person.patterns.Age
-import com.example.vavr.validation.workshop.person.patterns.City
-import com.example.vavr.validation.workshop.person.patterns.Email
-import com.example.vavr.validation.workshop.person.patterns.Emails
-import com.example.vavr.validation.workshop.person.patterns.Name
-import com.example.vavr.validation.workshop.person.patterns.PostalCode
+import com.example.vavr.validation.workshop.person.patterns.*
 import io.vavr.collection.List
 import io.vavr.control.Validation
 import spock.lang.Specification

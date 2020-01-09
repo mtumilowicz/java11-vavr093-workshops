@@ -10,7 +10,7 @@ import spock.lang.Specification
 import workshops.Workshop
 
 import java.time.LocalDate
-import java.time.format.DateTimeParseException 
+import java.time.format.DateTimeParseException
 
 class WorkshopTests extends Specification {
     def "numberConverter"() {
@@ -221,18 +221,18 @@ class WorkshopTests extends Specification {
 
         when:
         Workshop.tryDecompose('3', display)
-        
+
         then:
         display.message == 'squared number is: 9'
     }
-    
+
     def "tryDecompose, fail to parse an input string as a number"() {
         given:
         def display = new Display()
 
         when:
         Workshop.tryDecompose('wrong', display)
-        
+
         then:
         display.message == 'cannot square number: For input string: "wrong"'
     }

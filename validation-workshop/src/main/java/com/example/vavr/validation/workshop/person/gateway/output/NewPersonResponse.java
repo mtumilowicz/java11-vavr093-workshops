@@ -1,7 +1,10 @@
 package com.example.vavr.validation.workshop.person.gateway.output;
 
 import com.example.vavr.validation.workshop.person.patterns.PersonId;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Builder

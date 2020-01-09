@@ -8,6 +8,6 @@ class PersonRequestPatchServiceTest extends Specification {
     def "test patchSaveRequest - always Option.none"() {
         expect:
         new PersonRequestPatchService().patchSaveRequest(NewPersonRequest.builder()
-        .build()) == Option.none()
+                .build()) == Option.none()
     }
 }

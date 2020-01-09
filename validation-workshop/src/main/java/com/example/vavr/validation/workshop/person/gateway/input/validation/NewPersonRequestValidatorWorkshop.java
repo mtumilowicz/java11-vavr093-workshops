@@ -15,16 +15,16 @@ import java.util.LinkedList;
 import java.util.function.Function;
 
 public class NewPersonRequestValidatorWorkshop {
-    
+
     private static Function<Seq<String>, String> concatByComma = strings -> strings.mkString(", ");
 
     /**
      * should return Validation<Seq<String>, NewPersonCommand>
-     *
-     * hints: 
-     *  return Validation
-     *      combine(Name.validateWorkshop(request.getName()), ...)
-     *      .ap((name, ...) -> NewPersonCommand.builder()...)
+     * <p>
+     * hints:
+     * return Validation
+     * combine(Name.validateWorkshop(request.getName()), ...)
+     * .ap((name, ...) -> NewPersonCommand.builder()...)
      */
     public static NewPersonCommand validate(NewPersonRequest request) {
         var errors = new LinkedList<String>();

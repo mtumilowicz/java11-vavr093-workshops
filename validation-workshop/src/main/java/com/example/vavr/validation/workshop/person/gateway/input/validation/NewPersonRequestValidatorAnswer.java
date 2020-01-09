@@ -12,7 +12,7 @@ import java.util.function.Function;
 
 public class NewPersonRequestValidatorAnswer {
     private static Function<Seq<String>, String> concatByComma = strings -> strings.mkString(", ");
-    
+
     public static Validation<Seq<String>, NewPersonCommand> validate(NewPersonRequest request) {
 
         return Validation

@@ -13,7 +13,7 @@ class PersonRepository {
                 return Try.failure(new EntityNotFoundException());
         }
     }
-    
+
     static void save(Person person) {
         switch (person.getId()) {
             case 1:

@@ -11,10 +11,10 @@ import java.time.Month
 import java.util.function.Consumer
 import java.util.function.Function
 import java.util.function.UnaryOperator
-import java.util.stream.Collectors 
+import java.util.stream.Collectors
 
 class Workshop extends Specification {
-    
+
     def "create successful (Right) Either with value 1, then verify"() {
         given:
         Either<String, Integer> success = -1 // hint: Either.right
@@ -109,7 +109,7 @@ class Workshop extends Specification {
         when:
         Either<String, Number> sum = from1To4 // hint: sequenceRight, map, sum
         Either<String, Number> fail = all // hint: sequenceRight, map, sum
-        
+
         then:
         sum.isRight()
         sum.get() == 10
@@ -301,14 +301,14 @@ class Workshop extends Specification {
         Consumer<Integer> log = {
             logfile << it
         }
-        
+
         and:
         Function<Integer, Either<String, String>> findById = {
             id ->
                 CacheRepository.findById(id)
-                        // hint: peekLeft, logfile, log
-                        // hint: orElse, DatabaseRepository.findById(id)
-                        // hint: peekLeft, logfile, log
+                // hint: peekLeft, logfile, log
+                // hint: orElse, DatabaseRepository.findById(id)
+                // hint: peekLeft, logfile, log
         }
 
         when:
@@ -337,7 +337,7 @@ class Workshop extends Specification {
         Consumer<Integer> log = {
             logfile << it
         }
-        
+
         and:
         Function<Integer, Either<String, String>> findById = {
             id -> DatabaseRepository.findById(id)
@@ -362,7 +362,7 @@ class Workshop extends Specification {
         Consumer<Integer> pushToDisplay = {
             display << it
         }
-        
+
         and:
         Consumer<Integer> process = {
             id -> DatabaseRepository.findById(id) // hint: orElseRun, pushToDisplay

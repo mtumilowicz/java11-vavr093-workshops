@@ -11,7 +11,7 @@ import java.time.Month
 import java.util.function.Consumer
 import java.util.function.Function
 import java.util.function.UnaryOperator
-import java.util.stream.Collectors 
+import java.util.stream.Collectors
 
 class Answers extends Specification {
 

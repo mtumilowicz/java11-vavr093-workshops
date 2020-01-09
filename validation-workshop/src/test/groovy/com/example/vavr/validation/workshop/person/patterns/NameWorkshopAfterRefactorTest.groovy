@@ -1,7 +1,7 @@
 package com.example.vavr.validation.workshop.person.patterns
 
 import io.vavr.control.Validation
-import spock.lang.Specification 
+import spock.lang.Specification
 
 class NameWorkshopAfterRefactorTest extends Specification {
 
@@ -14,5 +14,5 @@ class NameWorkshopAfterRefactorTest extends Specification {
         expect:
         Name.validateWorkshop('%') == Validation.invalid('Name: % is not valid!')
     }
-    
+
 }

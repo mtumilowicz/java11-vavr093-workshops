@@ -15,7 +15,7 @@ public class Person {
     boolean active;
     Account account;
     Address address;
-    
+
     public static Predicate<Person> hasType(PersonType type) {
         return p -> Match(p.type).of(
                 Case(API.$(type), true),

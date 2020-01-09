@@ -10,7 +10,7 @@ import spock.lang.Specification
 import workshops.Answers
 
 import java.time.LocalDate
-import java.time.format.DateTimeParseException 
+import java.time.format.DateTimeParseException
 
 class AnswersTests extends Specification {
     def "numberConverter"() {
@@ -221,18 +221,18 @@ class AnswersTests extends Specification {
 
         when:
         Answers.tryDecompose('3', display)
-        
+
         then:
         display.message == 'squared number is: 9'
     }
-    
+
     def "tryDecompose, fail to parse an input string as a number"() {
         given:
         def display = new Display()
 
         when:
         Answers.tryDecompose('wrong', display)
-        
+
         then:
         display.message == 'cannot square number: For input string: "wrong"'
     }
@@ -289,7 +289,7 @@ class AnswersTests extends Specification {
         Answers.personDecompose(p2) == 328
         Answers.personDecompose(p3) == 508
     }
-    
+
     def "isInTest"() {
         expect:
         Answers.isInTest(Invoice.of(PaymentType.APPLE_PAY)) == 'mobile'

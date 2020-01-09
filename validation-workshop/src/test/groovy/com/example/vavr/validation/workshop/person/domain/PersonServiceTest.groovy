@@ -1,12 +1,6 @@
 package com.example.vavr.validation.workshop.person.domain
 
-import com.example.vavr.validation.workshop.person.patterns.Age
-import com.example.vavr.validation.workshop.person.patterns.City
-import com.example.vavr.validation.workshop.person.patterns.Email
-import com.example.vavr.validation.workshop.person.patterns.Emails
-import com.example.vavr.validation.workshop.person.patterns.Name
-import com.example.vavr.validation.workshop.person.patterns.PersonId
-import com.example.vavr.validation.workshop.person.patterns.PostalCode
+import com.example.vavr.validation.workshop.person.patterns.*
 import io.vavr.collection.List
 import spock.lang.Specification
 
@@ -22,12 +16,12 @@ class PersonServiceTest extends Specification {
                         .postalCode(PostalCode.of('00-001'))
                         .build())
                 .build()
-        
+
         def service = new PersonService(new PersonRepository())
-        
+
         when:
         def personId = service.save(command)
-        
+
         then:
         personId == PersonId.of(1)
     }

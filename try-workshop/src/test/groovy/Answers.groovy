@@ -200,9 +200,9 @@ class Answers extends Specification {
 
         when:
         Try<Integer> squared = Try.of { parse.apply(number) }
-                .map { it ** 2 }
+                .map { it**2 }
         Try<Integer> fail = Try.of { parse.apply(letter) }
-                .map { it ** 2 }
+                .map { it**2 }
 
         then:
         squared.success

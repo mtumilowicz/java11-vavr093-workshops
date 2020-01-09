@@ -10,7 +10,7 @@ import java.time.LocalDate;
 
 @Patterns
 class DecompositionWorkshop {
-    
+
     @Unapply
     // create Tuple2 of account, balance from an input person
     static Tuple2<Account, Address> PersonByCreditAssessSubjects(Person person) {

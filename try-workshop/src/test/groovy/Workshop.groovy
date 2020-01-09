@@ -559,7 +559,7 @@ class Workshop extends Specification {
 
         and:
         Function<Throwable, CannotParseInteger> mapper = { new CannotParseInteger(it.message) }
-        
+
         when:
         /*
         use: pattern matching, NumberFormatException, mapper

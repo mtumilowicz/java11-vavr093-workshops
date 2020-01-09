@@ -6,7 +6,6 @@ import person.Salary;
 import java.util.Objects;
 
 import static io.vavr.API.*;
-import static io.vavr.API.$;
 import static workshops.DecompositionAnswersPatterns.$CreditAssessSubjects;
 
 public class CreditAssessmentService {

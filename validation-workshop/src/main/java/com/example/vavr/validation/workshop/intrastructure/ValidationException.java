@@ -6,7 +6,7 @@ import lombok.Value;
 
 // class should be removed during PersonControllerWorkshop refactoring
 @Value(staticConstructor = "of")
-@EqualsAndHashCode(callSuper=false)
+@EqualsAndHashCode(callSuper = false)
 public class ValidationException extends RuntimeException {
     Seq<String> errors;
 }

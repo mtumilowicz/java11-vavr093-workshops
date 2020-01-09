@@ -1,7 +1,7 @@
 package com.example.vavr.validation.workshop.person.patterns
 
 import io.vavr.control.Validation
-import spock.lang.Specification 
+import spock.lang.Specification
 
 class NameAnswerTest extends Specification {
 
@@ -14,5 +14,5 @@ class NameAnswerTest extends Specification {
         expect:
         Name.validateAnswer('%') == Validation.invalid('Name: % is not valid!')
     }
-    
+
 }

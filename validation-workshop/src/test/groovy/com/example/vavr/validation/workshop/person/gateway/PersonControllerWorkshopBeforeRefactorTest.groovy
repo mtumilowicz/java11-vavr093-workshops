@@ -9,7 +9,7 @@ import com.example.vavr.validation.workshop.person.gateway.input.NewPersonReques
 import com.example.vavr.validation.workshop.person.gateway.output.NewPersonResponse
 import com.example.vavr.validation.workshop.person.patterns.PersonId
 import io.vavr.collection.List
-import spock.lang.Specification 
+import spock.lang.Specification
 
 class PersonControllerWorkshopBeforeRefactorTest extends Specification {
 
