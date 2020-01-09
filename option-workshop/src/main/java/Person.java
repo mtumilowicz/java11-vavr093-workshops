@@ -1,8 +1,5 @@
 import lombok.Value;
 
-/**
- * Created by mtumilowicz on 2019-03-03.
- */
 @Value
 class Person {
     int age;

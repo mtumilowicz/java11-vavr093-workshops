@@ -10,9 +10,6 @@ import java.util.function.Supplier
 
 import static java.util.Objects.nonNull
 
-/**
- * Created by mtumilowicz on 2019-03-02.
- */
 class Workshop extends Specification {
 
     def "create empty option"() {
