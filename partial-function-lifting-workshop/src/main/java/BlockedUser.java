@@ -5,9 +5,6 @@ import java.time.Clock;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
-/**
- * Created by mtumilowicz on 2018-12-06.
- */
 @Value
 @Builder
 class BlockedUser {

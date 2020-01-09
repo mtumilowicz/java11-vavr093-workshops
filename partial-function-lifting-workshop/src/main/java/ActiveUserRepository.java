@@ -4,9 +4,6 @@ import lombok.experimental.FieldDefaults;
 import java.util.Collection;
 import java.util.HashMap;
 
-/**
- * Created by mtumilowicz on 2018-12-06.
- */
 @FieldDefaults(makeFinal = true, level = AccessLevel.PRIVATE)
 class ActiveUserRepository {
     HashMap<Integer, ActiveUser> storage = new HashMap<>();

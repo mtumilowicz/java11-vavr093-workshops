@@ -1,8 +1,5 @@
 import io.vavr.PartialFunction
 
-/**
- * Created by mtumilowicz on 2019-03-04.
- */
 class IncrementAnswer implements PartialFunction<Integer, Integer> {
 
     final IntRange range

@@ -6,9 +6,6 @@ import lombok.experimental.FieldDefaults;
 
 import java.util.Random;
 
-/**
- * Created by mtumilowicz on 2019-03-05.
- */
 @FieldDefaults(makeFinal = true, level = AccessLevel.PRIVATE)
 @RequiredArgsConstructor
 class RandomIdentity implements PartialFunction<Integer, Integer> {
