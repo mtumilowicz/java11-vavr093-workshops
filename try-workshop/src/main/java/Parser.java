@@ -1,6 +1,3 @@
-/**
- * Created by mtumilowicz on 2019-04-05.
- */
 class Parser {
     /*
     rewrite using Try (method should return Try<Integer>)

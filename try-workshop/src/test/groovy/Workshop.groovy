@@ -13,9 +13,6 @@ import java.time.Month
 import java.util.function.*
 import java.util.stream.Collectors
 
-/**
- * Created by mtumilowicz on 2019-03-03.
- */
 class Workshop extends Specification {
 
     def "create successful Try with value 1, verify success and value"() {

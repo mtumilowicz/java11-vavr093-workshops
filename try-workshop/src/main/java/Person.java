@@ -4,9 +4,6 @@ import lombok.experimental.Wither;
 
 import java.util.function.Predicate;
 
-/**
- * Created by mtumilowicz on 2019-03-03.
- */
 @Value
 @Wither
 @Builder

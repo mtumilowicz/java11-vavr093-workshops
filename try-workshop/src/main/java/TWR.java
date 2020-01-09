@@ -6,9 +6,6 @@ import java.nio.file.Paths;
 
 import static java.util.stream.Collectors.joining;
 
-/**
- * Created by mtumilowicz on 2019-03-03.
- */
 class TWR {
     static String usingJava(String path) throws IOException {
         String fileLines;

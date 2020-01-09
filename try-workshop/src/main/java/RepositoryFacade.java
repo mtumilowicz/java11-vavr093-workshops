@@ -1,9 +1,6 @@
 import io.vavr.control.Try;
 import lombok.Value;
 
-/**
- * Created by mtumilowicz on 2019-03-03.
- */
 class RepositoryFacade {
     /*
     implement function that will try to:

@@ -17,9 +17,6 @@ import static io.vavr.API.$
 import static io.vavr.API.Case
 import static io.vavr.Predicates.instanceOf
 
-/**
- * Created by mtumilowicz on 2019-03-03.
- */
 class Answers extends Specification {
 
     def "create successful Try with value 1, verify success and value"() {

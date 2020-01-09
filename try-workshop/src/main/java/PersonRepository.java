@@ -1,8 +1,5 @@
 import io.vavr.control.Try;
 
-/**
- * Created by mtumilowicz on 2019-03-20.
- */
 class PersonRepository {
     static Try<Person> findById(int id) {
         switch (id) {
