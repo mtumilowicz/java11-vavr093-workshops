@@ -3,9 +3,6 @@ import io.vavr.control.Either;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
-/**
- * Created by mtumilowicz on 2019-04-26.
- */
 public class PersonServiceAnswer {
     static Consumer<Person> updateStats = person -> {
     };

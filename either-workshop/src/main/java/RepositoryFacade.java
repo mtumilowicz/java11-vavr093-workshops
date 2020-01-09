@@ -1,8 +1,5 @@
 import io.vavr.control.Either;
 
-/**
- * Created by mtumilowicz on 2019-04-26.
- */
 class CacheRepository {
     static Either<String, String> findById(int id) {
         switch (id) {

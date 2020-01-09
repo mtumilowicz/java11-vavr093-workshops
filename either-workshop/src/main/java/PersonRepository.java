@@ -1,8 +1,5 @@
 import io.vavr.control.Either;
 
-/**
- * Created by mtumilowicz on 2019-04-26.
- */
 class PersonRepository {
     static Either<String, Person> findById(int id) {
         switch (id) {
