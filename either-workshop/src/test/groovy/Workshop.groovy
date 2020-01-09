@@ -12,9 +12,7 @@ import java.util.function.Consumer
 import java.util.function.Function
 import java.util.function.UnaryOperator
 import java.util.stream.Collectors 
-/**
- * Created by mtumilowicz on 2019-04-30.
- */
+
 class Workshop extends Specification {
     
     def "create successful (Right) Either with value 1, then verify"() {

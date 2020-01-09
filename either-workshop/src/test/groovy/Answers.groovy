@@ -12,9 +12,7 @@ import java.util.function.Consumer
 import java.util.function.Function
 import java.util.function.UnaryOperator
 import java.util.stream.Collectors 
-/**
- * Created by mtumilowicz on 2019-04-10.
- */
+
 class Answers extends Specification {
 
     def "create successful (Right) Either with value 1"() {
