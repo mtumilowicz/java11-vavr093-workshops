@@ -5,9 +5,6 @@ import lombok.Value;
 import person.PersonType;
 import person.Salary;
 
-/**
- * Created by mtumilowicz on 2019-05-02.
- */
 @Value
 @Builder
 public class ValidPersonRequest {

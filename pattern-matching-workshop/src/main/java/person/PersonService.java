@@ -11,9 +11,6 @@ import static io.vavr.API.*;
 import static io.vavr.Predicates.allOf;
 import static java.util.function.Predicate.not;
 
-/**
- * Created by mtumilowicz on 2019-05-02.
- */
 public class PersonService {
 
     public static Either<String, Person> patch(@NonNull PersonRequest personRequest) {

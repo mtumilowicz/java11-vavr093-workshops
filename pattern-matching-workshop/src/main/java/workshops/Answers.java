@@ -26,9 +26,6 @@ import static java.util.function.Predicate.not;
 import static workshops.DecompositionAnswersPatterns.$LocalDate;
 import static workshops.DecompositionAnswersPatterns.$PersonByCreditAssessSubjects;
 
-/**
- * Created by mtumilowicz on 2019-05-01.
- */
 /*
 TO-DO:
 1. readme

@@ -1,8 +1,5 @@
 package tax;
 
-/**
- * Created by mtumilowicz on 2019-05-02.
- */
 public class TaxService {
     public static int taxBeforeOr2010() {
         return 1;

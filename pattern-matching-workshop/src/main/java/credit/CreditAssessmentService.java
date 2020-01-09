@@ -9,9 +9,6 @@ import static io.vavr.API.*;
 import static io.vavr.API.$;
 import static workshops.DecompositionAnswersPatterns.$CreditAssessSubjects;
 
-/**
- * Created by mtumilowicz on 2019-05-02.
- */
 public class CreditAssessmentService {
     public static int serviceMethodAssess(CreditAssessSubjects subjects) {
         return Match(subjects).of(

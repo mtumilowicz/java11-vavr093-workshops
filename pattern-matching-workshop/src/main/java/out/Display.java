@@ -3,9 +3,6 @@ package out;
 import lombok.Getter;
 import lombok.ToString;
 
-/**
- * Created by mtumilowicz on 2019-05-03.
- */
 @ToString
 public class Display {
     @Getter

@@ -26,9 +26,6 @@ import static io.vavr.Predicates.is;
 import static java.util.Objects.nonNull;
 import static java.util.function.Predicate.not;
 
-/**
- * Created by mtumilowicz on 2019-05-03.
- */
 public class Workshop {
 
     /**

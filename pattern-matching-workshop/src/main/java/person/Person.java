@@ -8,9 +8,6 @@ import java.util.function.Predicate;
 
 import static io.vavr.API.*;
 
-/**
- * Created by mtumilowicz on 2019-05-01.
- */
 @Value
 @Builder
 public class Person {

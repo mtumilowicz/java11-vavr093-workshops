@@ -9,9 +9,6 @@ import person.*;
 
 import java.time.LocalDate;
 
-/**
- * Created by mtumilowicz on 2019-05-01.
- */
 @Patterns
 class DecompositionAnswers {
     @Unapply

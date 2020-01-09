@@ -11,9 +11,7 @@ import workshops.Answers
 
 import java.time.LocalDate
 import java.time.format.DateTimeParseException 
-/**
- * Created by mtumilowicz on 2019-04-10.
- */
+
 class AnswersTests extends Specification {
     def "numberConverter"() {
         expect:
