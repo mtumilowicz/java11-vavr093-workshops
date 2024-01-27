@@ -8,12 +8,12 @@ class PersonRepositoryTest extends Specification {
     def "test save"() {
         given:
         def person = Person.builder()
-                .age(Age.of(14))
-                .name(Name.of('a'))
-                .emails(new Emails(List.of(Email.of('aaa@aaa.pl'))))
+                .age(Age.unsafeFrom(14))
+                .name(Name.unsafeFrom('a'))
+                .emails(new Emails(List.of(Email.unsafeFrom('aaa@aaa.pl'))))
                 .address(Address.builder()
-                        .city(City.of('Warsaw'))
-                        .postalCode(PostalCode.of('00-001'))
+                        .city(City.unsafeFrom('Warsaw'))
+                        .postalCode(PostalCode.unsafeFrom('00-001'))
                         .build())
                 .build()
 

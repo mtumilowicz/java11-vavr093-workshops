@@ -7,7 +7,7 @@ class NameAnswerTest extends Specification {
 
     def "validateAnswer - valid"() {
         expect:
-        Name.validateAnswer('Alfred') == Validation.valid(Name.of('Alfred'))
+        Name.validateAnswer('Alfred') == Validation.valid(Name.unsafeFrom('Alfred'))
     }
 
     def "validateAnswer - invalid"() {

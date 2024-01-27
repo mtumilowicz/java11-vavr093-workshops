@@ -25,7 +25,7 @@ public class Email {
         this.raw = email;
     }
 
-    public static Email of(@NonNull String email) {
+    public static Email unsafeFrom(@NonNull String email) {
         Preconditions.checkArgument(PREDICATE.test(email));
 
         return new Email(email);

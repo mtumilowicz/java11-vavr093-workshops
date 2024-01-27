@@ -8,7 +8,7 @@ class NameWorkshopBeforeRefactorTest extends Specification {
 
     def "validateWorkshop - valid"() {
         expect:
-        Name.validateWorkshop('Alfred') == Name.of('Alfred')
+        Name.validateWorkshop('Alfred') == Name.unsafeFrom('Alfred')
     }
 
     def "validateWorkshop - invalid"() {

@@ -20,7 +20,7 @@ public class City {
         this.raw = city;
     }
 
-    public static City of(@NonNull String city) {
+    public static City unsafeFrom(@NonNull String city) {
         Preconditions.checkArgument(PREDICATE.test(city));
 
         return new City(city);

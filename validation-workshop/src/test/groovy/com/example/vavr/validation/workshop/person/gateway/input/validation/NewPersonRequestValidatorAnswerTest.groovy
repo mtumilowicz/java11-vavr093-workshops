@@ -4,7 +4,6 @@ import com.example.vavr.validation.workshop.person.domain.NewAddressCommand
 import com.example.vavr.validation.workshop.person.domain.NewPersonCommand
 import com.example.vavr.validation.workshop.person.gateway.input.NewAddressRequest
 import com.example.vavr.validation.workshop.person.gateway.input.NewPersonRequest
-import com.example.vavr.validation.workshop.person.gateway.input.validation.NewPersonRequestValidatorAnswer
 import com.example.vavr.validation.workshop.person.patterns.*
 import io.vavr.collection.List
 import io.vavr.control.Validation
@@ -28,12 +27,12 @@ class NewPersonRequestValidatorAnswerTest extends Specification {
 
         then:
         validation == Validation.valid(NewPersonCommand.builder()
-                .age(Age.of(16))
-                .name(Name.of('a'))
-                .emails(new Emails(List.of(Email.of('aaa@aaa.pl'))))
+                .age(Age.unsafeFrom(16))
+                .name(Name.unsafeFrom('a'))
+                .emails(new Emails(List.of(Email.unsafeFrom('aaa@aaa.pl'))))
                 .address(NewAddressCommand.builder()
-                        .city(City.of('Warsaw'))
-                        .postalCode(PostalCode.of('00-001'))
+                        .city(City.unsafeFrom('Warsaw'))
+                        .postalCode(PostalCode.unsafeFrom('00-001'))
                         .build())
                 .build())
     }

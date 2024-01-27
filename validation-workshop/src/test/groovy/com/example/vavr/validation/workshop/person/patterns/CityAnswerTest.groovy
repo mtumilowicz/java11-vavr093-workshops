@@ -7,7 +7,7 @@ class CityAnswerTest extends Specification {
 
     def "validateAnswer - valid"() {
         expect:
-        City.validateAnswer('Warsaw') == Validation.valid(City.of('Warsaw'))
+        City.validateAnswer('Warsaw') == Validation.valid(City.unsafeFrom('Warsaw'))
     }
 
     def "validateAnswer - invalid"() {

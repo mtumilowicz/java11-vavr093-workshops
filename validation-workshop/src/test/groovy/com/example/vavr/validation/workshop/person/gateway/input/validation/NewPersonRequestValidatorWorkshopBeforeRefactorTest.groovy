@@ -27,12 +27,12 @@ class NewPersonRequestValidatorWorkshopBeforeRefactorTest extends Specification 
 
         then:
         command == NewPersonCommand.builder()
-                .age(Age.of(16))
-                .name(Name.of('a'))
-                .emails(new Emails(List.of(Email.of('aaa@aaa.pl'))))
+                .age(Age.unsafeFrom(16))
+                .name(Name.unsafeFrom('a'))
+                .emails(new Emails(List.of(Email.unsafeFrom('aaa@aaa.pl'))))
                 .address(NewAddressCommand.builder()
-                        .city(City.of('Warsaw'))
-                        .postalCode(PostalCode.of('00-001'))
+                        .city(City.unsafeFrom('Warsaw'))
+                        .postalCode(PostalCode.unsafeFrom('00-001'))
                         .build())
                 .build()
     }

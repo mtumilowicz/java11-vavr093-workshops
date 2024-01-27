@@ -7,7 +7,7 @@ class PostalCodeWorkshopAfterRefactorTest extends Specification {
 
     def "validateWorkshop - valid"() {
         expect:
-        PostalCode.validateWorkshop('00-001') == Validation.valid(PostalCode.of('00-001'))
+        PostalCode.validateWorkshop('00-001') == Validation.valid(PostalCode.unsafeFrom('00-001'))
     }
 
     def "validateWorkshop - invalid"() {

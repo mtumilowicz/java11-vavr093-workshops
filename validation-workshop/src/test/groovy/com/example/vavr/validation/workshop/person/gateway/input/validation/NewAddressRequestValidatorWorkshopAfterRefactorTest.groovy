@@ -35,8 +35,8 @@ class NewAddressRequestValidatorWorkshopAfterRefactorTest extends Specification 
 
         then:
         validation == Validation.valid(NewAddressCommand.builder()
-                .city(City.of('Warsaw'))
-                .postalCode(PostalCode.of('00-001'))
+                .city(City.unsafeFrom('Warsaw'))
+                .postalCode(PostalCode.unsafeFrom('00-001'))
                 .build())
     }
 }

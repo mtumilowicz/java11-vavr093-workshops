@@ -8,7 +8,7 @@ class AgeWorkshopBeforeRefactorTest extends Specification {
 
     def "validateWorkshop - valid"() {
         expect:
-        Age.validateWorkshop(15) == Age.of(15)
+        Age.validateWorkshop(15) == Age.unsafeFrom(15)
     }
 
     def "validateWorkshop - invalid"() {

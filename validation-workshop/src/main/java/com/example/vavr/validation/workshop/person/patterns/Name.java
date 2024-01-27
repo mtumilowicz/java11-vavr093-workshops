@@ -20,7 +20,7 @@ public class Name {
         this.raw = name;
     }
 
-    public static Name of(@NonNull String name) {
+    public static Name unsafeFrom(@NonNull String name) {
         Preconditions.checkArgument(PREDICATE.test(name));
 
         return new Name(name);

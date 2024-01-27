@@ -13,8 +13,8 @@ class EmailAnswerTest extends Specification {
                 'bbb@bbb.pl'
         )
         def emails = List.of(
-                Email.of('aaa@aaa.pl'),
-                Email.of('bbb@bbb.pl')
+                Email.unsafeFrom('aaa@aaa.pl'),
+                Email.unsafeFrom('bbb@bbb.pl')
         )
 
         expect:

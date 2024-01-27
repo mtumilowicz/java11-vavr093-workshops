@@ -8,8 +8,8 @@ class AddressMapperTest extends Specification {
     def "map command with all fields"() {
         given:
         def command = NewAddressCommand.builder()
-                .city(City.of('Warsaw'))
-                .postalCode(PostalCode.of('00-001'))
+                .city(City.unsafeFrom('Warsaw'))
+                .postalCode(PostalCode.unsafeFrom('00-001'))
                 .build()
 
         when:
@@ -17,8 +17,8 @@ class AddressMapperTest extends Specification {
 
         then:
         address == Address.builder()
-                .city(City.of('Warsaw'))
-                .postalCode(PostalCode.of('00-001'))
+                .city(City.unsafeFrom('Warsaw'))
+                .postalCode(PostalCode.unsafeFrom('00-001'))
                 .build()
     }
 }

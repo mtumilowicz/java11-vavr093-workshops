@@ -7,7 +7,7 @@ class CityWorkshopAfterRefactorTest extends Specification {
 
     def "validateWorkshop - valid"() {
         expect:
-        City.validateWorkshop('Warsaw') == Validation.valid(City.of('Warsaw'))
+        City.validateWorkshop('Warsaw') == Validation.valid(City.unsafeFrom('Warsaw'))
     }
 
     def "validateWorkshop - invalid"() {

@@ -7,7 +7,7 @@ class AgeAnswerTest extends Specification {
 
     def "validateAnswer - valid"() {
         expect:
-        Age.validateAnswer(15) == Validation.valid(Age.of(15))
+        Age.validateAnswer(15) == Validation.valid(Age.unsafeFrom(15))
     }
 
     def "validateAnswer - invalid"() {

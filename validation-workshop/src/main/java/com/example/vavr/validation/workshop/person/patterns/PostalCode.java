@@ -20,7 +20,7 @@ public class PostalCode {
         this.raw = postalCode;
     }
 
-    public static PostalCode of(@NonNull String postalCode) {
+    public static PostalCode unsafeFrom(@NonNull String postalCode) {
         Preconditions.checkArgument(PREDICATE.test(postalCode));
 
         return new PostalCode(postalCode);

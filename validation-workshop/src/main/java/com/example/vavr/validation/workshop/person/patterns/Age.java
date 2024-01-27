@@ -18,7 +18,7 @@ public class Age {
         this.raw = age;
     }
 
-    public static Age of(int age) {
+    public static Age unsafeFrom(int age) {
         Preconditions.checkArgument(PREDICATE.test(age));
 
         return new Age(age);

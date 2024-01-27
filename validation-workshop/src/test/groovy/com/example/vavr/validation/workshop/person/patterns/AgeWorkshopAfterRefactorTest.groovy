@@ -1,6 +1,6 @@
 package com.example.vavr.validation.workshop.person.patterns
 
-import com.example.vavr.validation.workshop.person.patterns.Age
+
 import io.vavr.control.Validation
 import spock.lang.Specification
 
@@ -8,7 +8,7 @@ class AgeWorkshopAfterRefactorTest extends Specification {
 
     def "validateWorkshop - valid"() {
         expect:
-        Age.validateWorkshop(15) == Validation.valid(Age.of(15))
+        Age.validateWorkshop(15) == Validation.valid(Age.unsafeFrom(15))
     }
 
     def "validateWorkshop - invalid"() {

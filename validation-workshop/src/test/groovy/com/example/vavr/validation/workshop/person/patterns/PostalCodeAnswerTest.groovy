@@ -7,7 +7,7 @@ class PostalCodeAnswerTest extends Specification {
 
     def "validateAnswer - valid"() {
         expect:
-        PostalCode.validateAnswer('00-001') == Validation.valid(PostalCode.of('00-001'))
+        PostalCode.validateAnswer('00-001') == Validation.valid(PostalCode.unsafeFrom('00-001'))
     }
 
     def "validateAnswer - invalid"() {
